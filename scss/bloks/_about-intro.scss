@@ -79,12 +79,12 @@ only screen and (                min-resolution: 2dppx) {
 @media screen and (max-width:  $mobile) {
     .about-intro{
         background-image: none;
+        background-image: url(../img/tel_about.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-  .about-intro__container{
-    background-image: url(../img/tel_about.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+ 
   @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),

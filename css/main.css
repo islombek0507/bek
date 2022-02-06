@@ -1171,11 +1171,10 @@ a {
 @media screen and (max-width: 719px) {
   .about-intro {
     background-image: none;
-  }
-  .about-intro__container {
     background-image: url(../img/tel_about.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
