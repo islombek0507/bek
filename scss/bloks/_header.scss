@@ -134,7 +134,7 @@ display: none;
       padding-left: 15px;
       padding-right: 15px;
       padding-top: 64px;
-      // padding-bottom: 24px;
+      padding-bottom: 24px;
       z-index: 3;
      &::before{
        content: "";
@@ -182,7 +182,7 @@ display: none;
 
       //Maket ikkalasi bir biriga tori kelmadi agar pastdagi margin-top: 60px ni bersa nav toliq introni egallaydi lekin button pastda qolib ketadi
       position: fixed;
-     bottom: 25px;
+     //bottom: 25px;
 //margin-bottom: 45px;
     //  margin-top: 200px;
       width: 192px;

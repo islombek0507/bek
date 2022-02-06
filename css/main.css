@@ -272,6 +272,7 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 64px;
+    padding-bottom: 24px;
     z-index: 3;
   }
   .header__nav--open::before {
@@ -313,7 +314,6 @@ a {
   .header__scootin {
     margin: 0;
     position: fixed;
-    bottom: 25px;
     width: 192px;
     color: #E5ECF4;
   }
