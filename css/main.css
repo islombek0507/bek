@@ -284,6 +284,17 @@ a {
     top: 0;
     left: -99%;
   }
+  .header__nav--open::after {
+    content: "";
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    background-color: #333A44;
+    opacity: 0.7;
+    top: 0;
+    right: -200%;
+    z-index: 4;
+  }
   .header__nav--closing {
     -webkit-animation: close .3s linear;
             animation: close .3s linear;
