@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Lexend Deca';
-  src: url("../fonts/") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff");
+  src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lexend Deca', Arial, Helvetica, sans-serif sans-serif;
+  font-family: Lexend Deca, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -290,7 +290,7 @@ a {
     height: 100%;
     position: absolute;
     background-color: #333A44;
-    opacity: 0.7;
+    opacity: 0.8;
     top: 0;
     right: -200%;
     z-index: 4;
