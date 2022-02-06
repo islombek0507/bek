@@ -314,6 +314,7 @@ a {
   .header__scootin {
     margin: 0;
     position: fixed;
+    bottom: 25px;
     width: 192px;
     color: #E5ECF4;
   }
