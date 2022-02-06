@@ -4,18 +4,18 @@
  background-repeat: no-repeat;
  background-size: cover ;
  position: relative;
-  &::before{
-    position: absolute;
-    width: 200px;
-    height: 63px;
-    display: block;
-    background-image: url(../img/abooo.svg);
-    
-    bottom: 70px;
-    left: calc(50% + 475px);
-    content: "";
+ &::before{
+  position: absolute;
+  width: 200px;
+  height: 63px;
+  display: block;
+  background-image: url(../img/abooo.svg);
+  bottom: 70px;
+right: 0px;
+  content: "";
 
-  }
+}
+ 
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -37,6 +37,8 @@ only screen and (                min-resolution: 2dppx) {
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: contain;
+    position: relative;
+ 
 }
 .about-intro__name{
     margin: 0;
@@ -44,9 +46,8 @@ only screen and (                min-resolution: 2dppx) {
     font-weight: bold;
     font-size: 56px;
     line-height: 56px;
-    
+    width: 311px;
     letter-spacing: -2.5px;
-    
     color: #FFFFFF;
 }
 @media screen and (max-width:  $planshet) {
@@ -58,7 +59,7 @@ only screen and (                min-resolution: 2dppx) {
       background-position: center;
       background-size: cover;
       &::before{
-        left: calc(50% + 290px);
+        display: none;
       }
   }
 
@@ -72,7 +73,7 @@ only screen and (                min-resolution: 2dppx) {
   
   /* Retina-specific stuff here */
   .about-intro{
-         background-image: url(../img/intro_am.jpg);
+         background-image: url(../../img/abop2x.jpg);
      
      }
 }}

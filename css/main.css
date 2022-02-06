@@ -1141,7 +1141,7 @@ a {
   display: block;
   background-image: url(../img/abooo.svg);
   bottom: 70px;
-  left: calc(50% + 475px);
+  right: 0px;
   content: "";
 }
 
@@ -1154,6 +1154,7 @@ a {
 
 .about-intro__container {
   padding: 72px 15px;
+  position: relative;
 }
 
 .about-intro__name {
@@ -1162,6 +1163,7 @@ a {
   font-weight: bold;
   font-size: 56px;
   line-height: 56px;
+  width: 311px;
   letter-spacing: -2.5px;
   color: #FFFFFF;
 }
@@ -1174,14 +1176,14 @@ a {
     background-size: cover;
   }
   .about-intro::before {
-    left: calc(50% + 290px);
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
   /* Retina-specific stuff here */
   .about-intro {
-    background-image: url(../img/intro_am.jpg);
+    background-image: url(../../img/abop2x.jpg);
   }
 }
 
