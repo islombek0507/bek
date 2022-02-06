@@ -1,0 +1,174 @@
+@keyframes open {
+    0% {
+      transform: translateX(-100%) ;
+     z-index: 2;
+    }
+    100% {
+      transform: translateX(0);
+    
+    }
+  }
+  @keyframes close {
+    100% {
+      transform: translateX(-100%)
+    }
+    0% {
+      transform: translateX(0%)
+    }
+  }
+ .header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  background-color: #fff;
+ }
+.header__container{
+    display: flex;
+    align-items: center;
+    padding: 22px 15px 21px;
+}
+.header__btn{
+    display: none;
+}
+.header__nav{ 
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+    justify-content: space-between;
+
+    
+    
+}
+.header__nav-list{
+    @include reset-list;
+    display: flex;
+    margin-left: 58px;
+}
+.header__nav-item{
+    margin-right: 15px;
+}
+.header__nav-link{
+    font-family: Space Mono;
+font-weight: bold;
+font-size: 15px;
+line-height: 25px;
+color: #939CAA;
+&:hover{
+    color: $accent-color;
+}
+}
+@media screen and (max-width:  $mobile) {
+    .header__container{
+        flex-direction: row-reverse;
+        
+        text-align: center;
+        position: relative;
+        padding-bottom: 22px;
+    }
+    
+    .header__nav{
+        display: none;
+        position: absolute;
+        z-index: -1;
+       
+    }
+
+    .header__btn{
+        display: block;
+        width: 16px;
+        height: 13px;
+        border: none;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        background-color: transparent;
+        z-index: 4;
+        margin-right: auto;
+        
+    }
+    .header__btn::after,
+  .header__btn::before,
+  .header__btn-span{
+      position: absolute;
+      width: 19px;
+      height: 3px;
+      display: block;
+      background-color: $accent-color;
+content: "";
+  }
+  .header__btn::after{
+bottom: 0px;
+  }
+  .header__btn::before{
+      top: 0px;
+  }
+  .header__btn-span{
+    top: 5px;
+   }
+   .header__btn--open{
+    display: flex;
+    
+  }
+  .header__btn--open .header__btn-span{
+display: none;
+  }
+  .header__btn--open::before,.header__btn--open::after{
+      top: 50%;
+  }
+  .header__btn--open::after{
+      transform: rotate(45deg);
+  }
+  .header__btn--open::before{
+      transform: rotate(-45deg);
+  }
+  .header__nav--open{
+    animation: open .5s linear; 
+      position: absolute;
+      display: block;
+      width: 226px;
+      height: calc(100vh - 64px);
+      background-color: #333A44;
+      top: 100%;
+      text-align: left;
+      left: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 64px;
+      padding-bottom: 24px;
+
+      z-index: 3;
+     
+
+  }
+  .header__nav--closing{
+    animation: close .3s linear;
+  }
+  .header__nav-list{
+  
+      flex-direction: column;
+      padding: 0px;
+      margin-left: 15px;
+      //maketda xatolik bor manimcha link yopilib qolyabdiagar margin-bottomni kamaytirsak link ko'rinadi ammo introni to'liq qoplamaydi
+      //margin-bottom: 320px;
+  }
+  .header__nav-item{
+      margin-bottom: 24px;
+      margin-right: 0px;
+      
+  }
+  .header__scootin{
+   
+      margin: 0;
+
+      //Maket ikkalasi bir biriga tori kelmadi agar pastdagi margin-top: 60px ni bersa nav toliq introni egallaydi lekin button pastda qolib ketadi
+      
+      margin-bottom: 15px;
+     margin-top: 220px;
+      width: 192px;
+      color: #E5ECF4;
+      
+      
+  }
+   
+}

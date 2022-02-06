@@ -1,0 +1,106 @@
+.about-intro{
+ background-image: url(../img/abo.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover ;
+ position: relative;
+  &::before{
+    position: absolute;
+    width: 200px;
+    height: 63px;
+    display: block;
+    background-image: url(../img/abooo.svg);
+    
+    bottom: 70px;
+    left: calc(50% + 475px);
+    content: "";
+
+  }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .about-intro{
+         background-image: url(../../img/abo2x.png);
+     
+     }
+}
+.about-intro__container{
+    padding: 72px 15px;
+    // background-image: url(../../img/intro_about2x.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+}
+.about-intro__name{
+    margin: 0;
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    
+    letter-spacing: -2.5px;
+    
+    color: #FFFFFF;
+}
+@media screen and (max-width:  $planshet) {
+  .about-intro{
+    
+    
+      background-image: url(../../img/abop.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &::before{
+        left: calc(50% + 292px);
+      }
+  }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .intro-about{
+         background-image: url(../img/intro_am.jpg);
+     
+     }
+}}
+@media screen and (max-width:  $mobile) {
+    .about-intro{
+        background-image: none;
+    }
+  .about-intro__container{
+    background-image: url(../img/tel_about.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .intro-about__container{
+         background-image: url(../img/tel_about2x.jpg);
+     
+     }}
+     .about-intro__container{
+         text-align: center;
+     }
+    
+
+}

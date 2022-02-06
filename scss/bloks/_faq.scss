@@ -1,0 +1,125 @@
+@keyframes opens {
+    0% {
+      transform: scale(0);
+      opacity: 0.3;
+      
+     z-index: 2;
+    }
+    100% {
+      transform: scale(1);
+    opacity: 1;
+    }
+  }
+.faq__container{
+  text-align: center;
+  padding-bottom: 120px;
+}
+.faq__name{
+  font-family: Space Mono;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+letter-spacing: -2.14286px;
+color: #495567;
+margin: 0;
+
+}
+.faq__title{
+  font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 48px;
+letter-spacing: -1.78571px;
+color: #495567;
+margin: 0;
+// margin-top: 64px;
+}
+.faq__list {
+    @include reset-list;
+    padding: 0;
+    margin: 0;
+   
+}
+.faq__item{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 64px;
+}
+.faq__list2 {
+ 
+    width: 730px;
+    @include reset-list;
+    padding: 0;
+    margin: 0;
+}
+.faq__item2 {
+    width: 100%;
+    padding: 32px 40px;
+    background-color: #F2F5F9;
+    margin-bottom: 20px;
+}
+.faq__btn{
+    background: transparent;
+    text-align: left;
+    width: 100%;
+    background-image: url(../../img/buttom.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -1.07143px;
+color: #495567;
+
+border: none;
+}
+.faq__btn--open{
+  background-image: url(../../img/top.svg);
+}
+.faq__text{
+    width: 100%;
+    color: #495567; 
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 15px;
+    display: none; 
+  }
+  .faq__text--open{
+    animation: opens .5s linear;
+    display: block;
+}
+@media screen and (max-width:  $planshet) {
+  .faq__item{
+  flex-direction: column;
+  }
+  .faq__list2{
+    width: 100%;
+  }
+  .faq__title{
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+  .faq__title{
+    font-size: 24px;
+line-height: 28px;
+  }
+  .faq__btn{
+   padding: 0px 15px 0px 0px;
+    width: 100%;
+    font-size: 18px;
+line-height: 24px;
+
+  }
+  .faq__text{
+    font-size: 15px;
+line-height: 25px;
+  }
+  .faq__item2{
+    padding: 32px 28px;
+  }
+}

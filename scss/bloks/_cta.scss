@@ -1,0 +1,103 @@
+.cta {
+    margin: 0;
+    padding: 0;
+    
+    background-image: url(../img/sta.jpg);
+    background-position: center;
+    background-size: cover contain;
+    background-repeat: no-repeat;
+}
+.cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 98px 15px;
+}
+
+.cta__title {
+    margin: 0;
+    width: 415px;
+    font-family: Space Mono;
+font-weight: bold;
+font-size: 48px;
+line-height: 48px;
+letter-spacing: -2.14286px;
+color: #FFFFFF;
+}
+.cta__img{
+    border-radius: 4px;
+
+}
+.cta__media{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 40px;
+    width: 340px;
+}
+
+@media screen and (max-width:  $planshet) {
+    .cta{
+        background-image: url(../img/ctap.jpg);
+        background-size: cover;
+    }
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+  .cta{
+      background-image: url(../img/stap2x.jpg);
+  }}
+    .cta__container{
+        flex-direction: column;
+       text-align: center;
+    }
+    .cta__title{
+        
+        width: 457px;
+    }
+    .cta__media{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 40px;
+        width: 340px;
+    }
+    .cta__link{
+        margin: 0;
+    }
+}
+@media screen and (max-width:  $mobile) {
+  .cta{
+      background-image: url(../../img/ctam.jpg);
+  }
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    
+    /* Retina-specific stuff here */
+    .cta{
+        background-image: url(../img/ctam2x.jpg);
+    }}
+    .cta__title{
+        width: 311px;
+        font-size: 32px;
+
+    }
+    .cta__media{
+        width: 272px;
+    }
+    .cta__img{
+        width: 130px;
+        height: 40px;
+    }
+}

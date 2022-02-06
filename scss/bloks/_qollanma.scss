@@ -1,0 +1,159 @@
+.qollanma__container{
+    padding-top: 208px;
+    
+}
+.qollanma__list{
+    position: relative;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding-top: 87px;
+    &::before{
+        content: "";
+        width: 90%;
+        height: 15px;
+        background-color: #E5ECF4;;
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -200px;
+    }
+}
+.qollanma__item{
+   position: relative;
+    width: 350px;
+    margin-right: 25px;
+    margin-bottom: 200px;
+    &:nth-child(3n),&:last-child{
+        margin-right: 0;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        top: -128px;
+       left: 0px;
+       background-repeat: no-repeat;
+       background-position: center;
+
+    }
+}
+.qollanma__item--img1{
+    &::before{
+        background-image: url(../../img/phon.svg);
+    }
+}
+.qollanma__item--img2{
+    &::before{
+        background-image: url(../../img/bsusle.svg);
+    }
+}
+.qollanma__item--img3{
+    &::before{
+        background-image: url(../../img/car.svg);
+    }
+}
+.qollanma__title{
+    margin: 0;
+    font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -1.07143px;
+color: #495567;
+}
+.qollanma__text{
+    color: #939CAA;
+    margin-top: 27px;
+}
+@media screen and (max-width:  $planshet) {
+    .qollanma__container{
+        padding-left: 263px;
+        padding-top: 122px;
+     
+    }
+  .qollanma__list{
+      margin: 0px;
+      padding: 0px;
+      width: 400px;
+      flex-direction: column;
+      &::before{
+          width: 15px;
+          height: 512px;
+          top: -122px;
+          left: -131px;
+      }
+  }
+  .qollanma__item{
+      margin: 0;
+      width: 100%;
+      margin-bottom: 40px;
+
+      &::before{
+          left: -171px;
+          top: 0px;
+      }
+  }
+
+}
+@media screen and (max-width:  $mobile) {
+    .qollanma__container{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        padding-top: 120px;
+    }
+    .qollanma__list{
+        width: 100%;
+    }
+  .qollanma__list{
+      &::before{
+          display: none;
+      }
+  }
+
+  .qollanma__item{
+      width: 100%;
+      padding-top: 80px;
+
+      &::before{
+          width: 56px;
+          height: 56px;
+          top: 0px;
+         left: 150px;
+      }
+  }
+  .qollanma__title{
+      width: 311px;
+      margin: 0 auto;
+      
+  }
+  .qollanma__text{
+      width: 311px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 27px;
+  }
+  .qollanma__item--img1{
+    &::before{
+        background-image: url(../../img/smal_tel.svg);
+    }
+}
+.qollanma__item--img2{
+    &::before{
+        background-image: url(../../img/bsucle_smal.svg);
+    }
+}
+.qollanma__item--img3{
+    &::before{
+        background-image: url(../../img/smal_car.svg);
+    }
+}
+}

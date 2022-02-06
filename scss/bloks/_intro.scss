@@ -1,0 +1,185 @@
+.intro{
+
+   background-image: url(../../img/intro2x.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+  .intro{
+      background-image: url(../img/intro.png);
+  }
+}
+.intro__container{
+    padding-top: 153px;
+    padding-bottom: 174px;
+}
+.intro__content{
+    width: 500px;
+    position: relative;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 202px; height: 14px;
+      background-image: url(../img/intro_before.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      left: -150px;
+        top: 180px;
+    
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 446px;
+        height: 147px;
+        background-image: url(../img/after.svg);
+        background-position: center;
+        right: -470px;
+        top: 180px;
+    }
+
+    
+}
+
+.intro__title{
+    font-family: Space Mono;
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+margin: 0px;
+letter-spacing: -2.5px;
+
+color: #FFFFFF;
+}
+.intro__discription{
+    margin-top: 40px;
+    margin-bottom: 62px;
+    font-size: 15px;
+    line-height: 25px;
+color: #FFFFFF;
+margin-left: 95px;
+width: 360px;
+}
+.intro__link{
+    margin-left: 95px;
+}
+@media screen and (max-width:  $planshet) {
+  .intro{
+      background-image: url(../img/intro_planshet.png);
+      background-size: cover;
+      background-position: center;
+  }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .intro{
+         background-image: url(../img/intro_planshet2x.png);
+     }
+}
+    .intro__container{
+        text-align: center;
+        padding: 0px;
+        padding-top: 137px;
+        padding-bottom: 217px;
+    }
+    .intro__content{
+        width: 573px;
+        margin: 0 auto;
+        text-align: center;
+        &::before{
+            display: none;
+        }
+        &::after{
+            left: -230px;
+            top: 270px;
+        }
+    }
+    .intro__title{
+        margin: 0;
+        width: 573px;
+        font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 56px;
+/* or 100% */
+
+text-align: center;
+letter-spacing: -2.5px;
+
+
+    }
+    .intro__discription{
+        
+        margin: 0;
+        margin-left: 50px;
+        width: 500px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        line-height: 25px;
+text-align: center;
+
+color: #FFFFFF;
+    }
+    .intro__link{
+        margin: 0px
+    }
+}
+@media screen and (max-width:  $mobile) {
+    .intro{
+       background-image: none;}
+    .intro__container{
+        background-image: url(../img/intro_mob.png);
+        background-size: cover;
+        overflow: hidden;
+    
+    }
+    @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+    .intro__container{
+        background-image: url(../img/intro_mob2x.png);
+    }
+  /* Retina-specific stuff here */
+}
+    .intro__content{
+        width: 311px;
+        &::after{
+            left: -320px;
+            top: 300px;
+        }
+    }
+  .intro__title{
+      width: 311px;
+      font-size: 40px;
+line-height: 40px;
+  }
+  .intro__discription{
+      margin-left: 0;
+      width: 311px;
+
+  }
+}

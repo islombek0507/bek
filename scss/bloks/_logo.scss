@@ -1,0 +1,16 @@
+.logo{
+    margin-right: auto;
+}
+.logo__img{
+  
+    display: block;
+}
+@media screen and (max-width:  $mobile) {
+  
+  .logo__img{
+      width: 75px;
+      height: 20px;
+      
+  }
+  
+}

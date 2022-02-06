@@ -1,0 +1,14 @@
+.scootin{
+    padding: 13px 38px;
+    background-color: $accent-color;
+    color: #fff;
+    border: 1px solid $accent-color;
+    font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+    &:hover{
+        background: transparent;
+        color: $accent-color;
+
+    }
+}
