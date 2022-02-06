@@ -466,9 +466,6 @@ a {
 
 @media screen and (max-width: 719px) {
   .intro {
-    background-image: none;
-  }
-  .intro__container {
     background-image: url(../img/intro_mob.png);
     background-size: cover;
     overflow: hidden;
@@ -476,7 +473,7 @@ a {
 }
 
 @media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min-resolution: 192dpi), only screen and (max-width: 719px) and (min-resolution: 2dppx) {
-  .intro__container {
+  .intro {
     background-image: url(../img/intro_mob2x.png);
   }
   /* Retina-specific stuff here */

@@ -145,13 +145,11 @@ color: #FFFFFF;
 }
 @media screen and (max-width:  $mobile) {
     .intro{
-       background-image: none;}
-    .intro__container{
         background-image: url(../img/intro_mob.png);
         background-size: cover;
         overflow: hidden;
-    
     }
+   
     @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -160,7 +158,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
-    .intro__container{
+    .intro{
         background-image: url(../img/intro_mob2x.png);
     }
   /* Retina-specific stuff here */
