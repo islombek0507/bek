@@ -306,6 +306,7 @@ a {
             flex-direction: column;
     padding: 0px;
     margin-left: 0;
+    margin-bottom: auto;
   }
   .header__nav-item {
     margin-bottom: 24px;
@@ -313,8 +314,6 @@ a {
   }
   .header__scootin {
     margin: 0;
-    position: fixed;
-    bottom: 25px;
     width: 192px;
     color: #E5ECF4;
   }

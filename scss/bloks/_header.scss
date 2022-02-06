@@ -167,6 +167,7 @@ display: none;
       flex-direction: column;
       padding: 0px;
       margin-left: 0;
+      margin-bottom: auto;
       // margin-left: 15px;
       //maketda xatolik bor manimcha link yopilib qolyabdiagar margin-bottomni kamaytirsak link ko'rinadi ammo introni to'liq qoplamaydi
       //margin-bottom: 220px;
@@ -181,10 +182,8 @@ display: none;
       margin: 0;
 
       //Maket ikkalasi bir biriga tori kelmadi agar pastdagi margin-top: 60px ni bersa nav toliq introni egallaydi lekin button pastda qolib ketadi
-      position: fixed;
-     bottom: 25px;
-//margin-bottom: 45px;
-    //  margin-top: 200px;
+    
+    // margin-top: 200px;
 
     
       width: 192px;
