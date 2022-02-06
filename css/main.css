@@ -272,7 +272,6 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 64px;
-    padding-bottom: 24px;
     z-index: 3;
   }
   .header__nav--open::before {
