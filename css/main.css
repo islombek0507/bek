@@ -313,8 +313,10 @@ a {
   }
   .header__scootin {
     margin: 0;
+    position: fixed;
+    bottom: 15px;
     margin-bottom: 15px;
-    margin-top: 220px;
+    margin-top: 200px;
     width: 192px;
     color: #E5ECF4;
   }

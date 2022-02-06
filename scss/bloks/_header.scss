@@ -181,9 +181,10 @@ display: none;
       margin: 0;
 
       //Maket ikkalasi bir biriga tori kelmadi agar pastdagi margin-top: 60px ni bersa nav toliq introni egallaydi lekin button pastda qolib ketadi
-      
+      position: fixed;
+      bottom: 15px;
       margin-bottom: 15px;
-     margin-top: 220px;
+     margin-top: 200px;
       width: 192px;
       color: #E5ECF4;
       
