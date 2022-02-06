@@ -285,7 +285,8 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0px;
-    margin-left: 15px;
+    margin-left: 0;
+    margin-bottom: 320px;
   }
   .header__nav-item {
     margin-bottom: 24px;
