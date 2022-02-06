@@ -1157,20 +1157,19 @@ a {
     background-size: cover;
   }
   .about-intro::before {
-    left: calc(50% + 292px);
+    left: calc(50% + 290px);
   }
 }
 
 @media only screen and (max-width: 1136px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1136px) and (min-resolution: 192dpi), only screen and (max-width: 1136px) and (min-resolution: 2dppx) {
   /* Retina-specific stuff here */
-  .intro-about {
+  .about-intro {
     background-image: url(../img/intro_am.jpg);
   }
 }
 
 @media screen and (max-width: 719px) {
   .about-intro {
-    background-image: none;
     background-image: url(../img/tel_about.jpg);
     background-size: cover;
     background-position: center;
@@ -1180,7 +1179,7 @@ a {
 
 @media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2), only screen and (max-width: 719px) and (min-resolution: 192dpi), only screen and (max-width: 719px) and (min-resolution: 2dppx) {
   /* Retina-specific stuff here */
-  .intro-about__container {
+  .about-intro {
     background-image: url(../img/tel_about2x.jpg);
   }
 }

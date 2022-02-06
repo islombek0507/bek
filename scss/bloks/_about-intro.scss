@@ -58,7 +58,7 @@ only screen and (                min-resolution: 2dppx) {
       background-position: center;
       background-size: cover;
       &::before{
-        left: calc(50% + 292px);
+        left: calc(50% + 290px);
       }
   }
 
@@ -71,14 +71,14 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
   /* Retina-specific stuff here */
-     .intro-about{
+  .about-intro{
          background-image: url(../img/intro_am.jpg);
      
      }
 }}
 @media screen and (max-width:  $mobile) {
     .about-intro{
-        background-image: none;
+   
         background-image: url(../img/tel_about.jpg);
         background-size: cover;
         background-position: center;
@@ -94,7 +94,7 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
   /* Retina-specific stuff here */
-     .intro-about__container{
+  .about-intro{
          background-image: url(../img/tel_about2x.jpg);
      
      }}
