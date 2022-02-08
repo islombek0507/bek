@@ -1,0 +1,183 @@
+.location{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.location__container {
+    background-image: url(../../img/map.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 542px;
+    position: relative;
+}
+.location__map{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.location__list{
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include reset-list;
+    width: 100%;
+    display: flex;
+}
+.location__item{
+    width: 25%;
+    position: relative;
+}
+.location__btn{
+    font-family: Space Mono;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    padding: 22px 39px;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    position: relative;
+    &:hover{
+        background: transparent;
+        color: $accent-color;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        display: block;
+        background-color: $accent-color;
+        transform: rotate(45deg);
+        bottom: -15px;
+        left: calc(50% - 15px);
+    }
+
+}
+.location__btn--new{
+    position: absolute;
+    right: -55px;
+   top: 80px;
+}
+.location__btn--lon{
+    position: absolute;
+right: -10px;
+}
+.location__btn--yok{
+    position: absolute;
+    right: -200px;
+    top: 70px;
+
+}
+.location__btn--jak{
+    position: absolute;
+    top: 240px;
+    right: 150px;
+}
+.location__map--newyork-open{
+    display: block;
+}
+.location__map--london--open{
+    display: block;
+}
+@media screen and (max-width:  $planshet) {
+    .location__btn{
+        padding: 2px 32px;
+        z-index: 2;
+        &::before{
+            width: 25px;
+            height: 25px;
+            z-index: -1;
+            left: calc(50% - 15px);
+            bottom: -12px;
+        }
+    }
+    .location__btn--new{
+        position: absolute;
+        right: -100px;
+       top: 130px;
+    }
+    .location__btn--lon{
+        position: absolute;
+    right: -70px;
+    top: 100px;
+    }
+    .location__btn--yok{
+        position: absolute;
+        right: -170px;
+        top: 150px;
+    
+    }
+    .location__btn--jak{
+        position: absolute;
+        top: 260px;
+        right: 80px;
+    }
+    
+}
+@media screen and (max-width:  $mobile) {
+   .location{
+       padding-top: 60px;
+   }
+    .location__container{
+        height: 264px;
+    }
+  .location__list{
+    top: 264px;
+      flex-direction: column;
+      width: 100%;
+  }
+  .location__item{
+      width: 100%;
+  }
+  .location__btn{
+      padding-top: 22px;
+      padding-bottom: 22px;
+    width: 100%;
+    background: rgba(252, 183, 43, 0.15);
+    &::before{
+border-radius: 50%;
+    }
+    
+  }
+  .location__btn--new{
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    &::before{
+        top: -470px;
+        left: 80px;
+    }
+}
+.location__btn--lon{
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    &::before{
+        top: -400px;
+        left: 150px;
+    }
+}
+.location__btn--yok{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    &::before{
+        top: -280px;
+      left: 270px;
+    }
+
+}
+.location__btn--jak{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    &::before{
+        top: -130px;
+      left: 250px;
+    }
+}
+
+}

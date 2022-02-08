@@ -15,7 +15,9 @@
     &:hover{
         path{
 
-            fill: #E5ECF4;;
+            fill: #E5ECF4;
+            cursor: pointer;
+      transition: .3s ease all;
         }
     }
 }
@@ -45,6 +47,8 @@ font-weight: bold;
 color: #939CAA;
 &:hover{
     color: $accent-color;
+    cursor: pointer;
+      transition: .3s ease all;
 }
 }
 @media screen and (max-width:  $mobile) {

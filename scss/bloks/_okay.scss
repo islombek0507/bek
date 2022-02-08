@@ -2,7 +2,7 @@
     width: 100%;
     overflow: hidden;
 }
-.okay__container--about{
+.okay__container--about, .okay__container--careers{
     padding-top: 120px;
 }
 .okay__list{
@@ -226,4 +226,35 @@ color: #495567;
   .okay__text{
       width: 311px;
   }
+}
+.okay__content--map{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.okay__text--map{
+    width: 445px;
+}
+.okay__title--map{
+    width: 351px;
+}
+@media screen and (max-width:  $planshet) {
+  .okay__content--map{
+      flex-direction: column;
+      padding-bottom: 72px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+    .okay__content--map{
+        margin-top: 200px;
+        width: 100%;
+       // padding-bottom: 72px;
+    }
+    .okay__title--map{
+        width: 100%;
+    }
+    .okay__text--map{
+        width: 100%;
+    }
 }

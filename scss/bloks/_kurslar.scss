@@ -1,0 +1,61 @@
+.kurslar__container{
+padding-bottom: 136px
+}
+.kurslar__list {
+    @include reset-list;
+    width: 100%;
+}
+.kurslar__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #F2F5F9;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    padding: 32px 64px 35px 40px;
+}
+
+.kurslar__title {
+    font-family: Space Mono;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -1.07143px;
+color: #495567;
+margin: 0;
+}
+.kurslar__text {
+    color: #495567;
+    margin-top: 8px;
+}
+.kurslar__scootin{
+    padding: 14px 67px;
+}
+@media screen and (max-width:  $planshet) {
+     .kurslar__container{
+         padding-bottom: 104px;
+     }
+    .kurslar__item{
+      padding-right: 48px;
+      margin-bottom: 16px;
+  }
+}
+@media screen and (max-width:  $mobile) {
+
+    .kurslar__item{
+        flex-direction: column;
+        text-align: center;
+        padding: 36px 32px 32px 32px;
+    }
+    .kurslar__title{
+        font-size: 18px;
+    }
+    .kurslar__scootin{
+        font-size: 15px;
+line-height: 25px;
+
+width: 100%;
+    }
+    
+
+}

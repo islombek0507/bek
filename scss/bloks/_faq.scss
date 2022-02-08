@@ -59,6 +59,11 @@ margin: 0;
     padding: 32px 40px;
     background-color: #F2F5F9;
     margin-bottom: 20px;
+    &:hover{
+      background-color: #FFF4DF;
+      cursor: pointer;
+      transition: .3s ease all;
+    }
 }
 .faq__btn{
     background: transparent;

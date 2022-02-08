@@ -1,6 +1,7 @@
 *,
 *::after,
 *::before{
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 img{

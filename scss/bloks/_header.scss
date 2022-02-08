@@ -56,6 +56,8 @@ line-height: 25px;
 color: #939CAA;
 &:hover{
     color: $accent-color;
+    cursor: pointer;
+      transition: .3s ease all;
 }
 }
 @media screen and (max-width:  $mobile) {
@@ -157,7 +159,6 @@ display: none;
        
        z-index: 4;
      }
-
   }
   .header__nav--closing{
     animation: close .3s linear;
@@ -167,6 +168,7 @@ display: none;
       flex-direction: column;
       padding: 0px;
       margin-left: 0;
+      margin-bottom: 200px;
      
   }
   .header__nav-item{
@@ -180,7 +182,7 @@ display: none;
 
       //Maket ikkalasi bir biriga tori kelmadi agar pastdagi margin-top: 60px ni bersa nav toliq introni egallaydi lekin button pastda qolib ketadi
     
-     margin-top: 200px;
+    // margin-top: 200px;
 
     
       width: 192px;

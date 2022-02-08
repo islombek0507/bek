@@ -27,7 +27,24 @@ only screen and (                min-resolution: 2dppx) {
   
   /* Retina-specific stuff here */
      .about-intro{
-         background-image: url(../../img/abo2x.png);
+         background-image: url(../img/abo2x.png);
+     
+     }
+}
+.about-intro--careers{
+  background-image: url(../img/careers.jpg);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .about-intro--careers{
+         background-image: url(../img/careers2x.jpg);
      
      }
 }
@@ -58,9 +75,7 @@ only screen and (                min-resolution: 2dppx) {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      &::before{
-        display: none;
-      }
+      
   }
 
 @media
@@ -73,10 +88,28 @@ only screen and (                min-resolution: 2dppx) {
   
   /* Retina-specific stuff here */
   .about-intro{
-         background-image: url(../../img/abop2x.jpg);
+         background-image: url(../img/abop2x.jpg);
      
      }
-}}
+}
+.about-intro--careers{
+  background-image: url(../../img/careep.jpg);
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+     .about-intro--careers{
+         background-image: url(../../img/careep2x.jpg);
+     
+     }
+}
+}
 @media screen and (max-width:  $mobile) {
     .about-intro{
    
@@ -84,6 +117,9 @@ only screen and (                min-resolution: 2dppx) {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        &::before{
+          display: none;
+        }
     }
  
   @media
@@ -97,11 +133,26 @@ only screen and (                min-resolution: 2dppx) {
   /* Retina-specific stuff here */
   .about-intro{
          background-image: url(../img/tel_about2x.jpg);
-     
+        
      }}
+
+     .about-intro--careers{
+      background-image: url(../../img/careem.jpg);
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      /* Retina-specific stuff here */
+         .about-intro--careers{
+             background-image: url(../../img/careem2x.jpg);
+         }
+    }
      .about-intro__container{
          text-align: center;
      }
-    
-
 }

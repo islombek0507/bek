@@ -9,6 +9,8 @@ line-height: 25px;
     &:hover{
         background: transparent;
         color: $accent-color;
+        cursor: pointer;
+      transition: .3s ease all;
 
     }
 }
